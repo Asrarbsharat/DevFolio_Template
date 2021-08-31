@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* start Home Page */
+header{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.bg-nav-oipcity{
+   background-color: rgb(0 0 0 / 90%);
+}
+.overlay{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+nav ul li{
+    position: relative;
+}
+.active::before{
+    content: "";
+    position: absolute;
+    border-bottom: solid 2px white;
+    bottom: 0;
+    left: 10px;
+    width: 50px;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    border-bottom: solid 2px white;
+    bottom: 0;
+    left: 10px;
+    width: 0px;
+}
+ nav ul li a:hover:not(.hom)::before{
+    content: "";
+    position: absolute;
+    border-bottom: solid 2px white;
+    bottom: 0;
+    left: 10px;
+    width: 80%;
+    transition: .5s;
+ }
+header .caption h1{
+  font-size: 60px;
+}
+header .caption p{
+    font-size: 40px;
+}
+.dropdown-menu li{
+    padding: 10px ;
+}
+.dropdown-menu li a:hover{
+    color:#0d6efd;
+}
+/* End Home Page */
+/* start About Section */
+.about{
+    background-color: #f1f1f1f1;
+}
+.about h3::before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color:#0d6efd ;
+    top:90px;
+    left: 0px;
+}
+.about .pragh p{
+    color: #777;
+    line-height: 1.8;
+}
+/* End About Section */
+
+/* Component */
+.main-heading{
+    text-align: center;
+}
+.main-heading h2{
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.main-heading p{
+    color: #777;
+    position: relative;
+}
+.main-heading p::before{
+   content: "";
+   position: absolute;
+   width: 40px;
+   height: 4px;
+   bottom: -15px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #0d6efd;
+}
+/* End Component */
+/* Start Services Section */
+.services{
+    background-color: #f1f1f1f1;
+}
+.srv-content{
+    border-radius: 10px;
+}
+.srv-content i{
+  border: solid 8px #0d6efd;
+  border-radius: 50%;
+  transition: .3s;  
+}
+.srv-content:hover i{
+    background-color: #0d6efd;
+    color: white;
+    box-shadow:0 0 0 8px #0d6efd38;
+}
+.srv-content p{
+  color: #777;
+}
+/* End Services Section */
+/* Start counter section */
+.counter{
+    background-image: url(../img/counters-bg.jpg);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.counter .overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #0078ff;
+  opacity: .7;
+}
+.counter .count-content i{
+   border: solid 8px white;
+   border-radius: 50%;
+}
+.counter .count-content p{
+    font-size: 30px;
+}
+.counter .count-content .work{
+    font-size: 20px;
+}
+.counter .count-content{
+    padding-top: 50px;
+}
+/* End Counter Section */
+/* start portfolio section */
+.portfolio{
+    background-color:#f1f1f1f1;
+}
+.portfolio .caption {
+    font-size: 14px;
+}
+.portfolio .card{
+    transition: 1s;
+    overflow: hidden;
+}
+.portfolio .card img{
+    transition: 1s;
+}
+.portfolio .card:hover img{
+    transform: scale(1.3);
+    transition: 1s;
+}
+/* End portfolio section */
+/* Start blog Section */
+.blog{
+    background-color: #f1f1f1f1;
+}
+.blog h5{
+    transition: .4s;
+}
+.blog h5:hover,
+.blog .name:hover{
+    color: #0d6efd;
+}
+.blog .blog-1::after{
+    content: "TRAVEL";
+    position: absolute;
+    background-color: #0d6efd;
+    color: white;
+    width: 100px;
+    height: 30px;
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.blog .blog-2::after{
+    content: "WEB";
+    position: absolute;
+    background-color: #0d6efd;
+    color: white;
+    width: 100px;
+    height: 30px;
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.blog .blog-3::after{
+    content: "DESIGN";
+    position: absolute;
+    background-color: #0d6efd;
+    color: white;
+    width: 100px;
+    height: 30px;
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.blog .person{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.blog .foot{
+    background-color: #f1f1f1f1;
+    border-top: solid 1px #ddd;
+}
+/* End Blog Section */
+/* Start Footer Section */
+.footer{
+    background-image: url(../img/overlay-bg.jpg);
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+.footer .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #4092eaed;
+    padding: 50px;
+}
+.footer input ,
+.footer textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+input:focus,
+textarea:focus{
+    box-shadow:0 0 0 3px #0d6efd38;
+    border: solid 1px #0d6efd;
+}
+.footer textarea{
+    height: 100px;
+}
+.footer h3::before{
+    content: "";
+    position: absolute;
+    background-color: #0d6efd;
+    width: 95px;
+    height: 3px;
+    bottom: 30px;
+    left:48px;
+}
+.footer .get::before{
+    content: "";
+    position: absolute;
+    background-color: #0d6efd;
+    width: 95px;
+    height: 3px;
+    bottom: 30px;
+    left:5px;
+}
+.footer button{
+    background-color: #0078ff;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+.footer button:hover{
+    box-shadow:0 0 0 5px #0d6efd38;
+}
+.footer p{
+    color: #777;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.footer .social i{
+   border: solid 3px #0078ff;
+   color: black;
+   border-radius: 50%;
+   margin-right: 5px;
+   transition: .3s;
+}
+.footer .social i:hover{
+    color: white;
+    background-color: #0078ff;
+    box-shadow:0 0 0 2px #0d6efd38;
+}
+.copyright{
+    background-color: #0062d3;
+}
